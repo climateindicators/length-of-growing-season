@@ -1,0 +1,124 @@
+indicator:
+  name: Length of Growing Season
+  slug: length-of-growing-season
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-length-growing-season/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-06/growing-season_documentation.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: length_of_growing_season_national.csv
+  figure: Figure 1
+  figure_title: Figure 1. Length of Growing Season in the Contiguous 48 States, 1895-2023
+  source_file: growing-season_fig-1.csv
+  source_sha256: bf6d56dc8eef47a6a4c2a3e15e572855493de153b08327a183a8d3fe7c9541b2
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days
+  rows: 129
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year, 1895-2023.
+  - name: value
+    type: number
+    description: Deviation of national growing season length from the 1895-2023 average,
+      in days.
+- file: length_of_growing_season_east_west.csv
+  figure: Figure 2
+  figure_title: 'Figure 2. Length of Growing Season in the Contiguous 48 States, 1895-2023:
+    West Versus East'
+  source_file: growing-season_fig-2.csv
+  source_sha256: 68703af96e8d95aa014b87556c2622b2ca5cfc727f6e23d2fa4a9efa356fa195
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days
+  rows: 258
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year, 1895-2023.
+  - name: region
+    type: character
+    description: '''east'' or ''west'', the two US regions compared in this figure.'
+  - name: value
+    type: number
+    description: Deviation of regional growing season length from the 1895-2023 average,
+      in days.
+- file: length_of_growing_season_by_state.csv
+  figure: Figure 3
+  figure_title: Figure 3. Change in Length of Growing Season by State, 1895-2023
+  source_file: growing-season_fig-3.csv
+  source_sha256: 1c57a7c821fb42dabd50d8e87a07230e329b0657d2c243406ff93c62e05b58a0
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days change
+  rows: 47
+  columns:
+  - name: state
+    type: character
+    description: US state name (contiguous 48 states).
+  - name: value
+    type: number
+    description: Total change in growing season length from 1895 to 2023, in days.
+- file: length_of_growing_season_frost_timing.csv
+  figure: Figure 4
+  figure_title: Figure 4. Timing of the Last Spring Frost and First Fall Frost in
+    the Contiguous 48 States, 1895-2023
+  source_file: growing-season_fig-4.csv
+  source_sha256: 80f58167304629b1fa55a2770176080fef588c45169be97254bf3e7433176ebf
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days
+  rows: 258
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year, 1895-2023.
+  - name: event
+    type: character
+    description: '''last_spring_frost'' or ''first_fall_frost'', the two frost timing
+      series shown in this figure.'
+  - name: value
+    type: number
+    description: Deviation of national frost date from the 1895-2023 average, in days;
+      positive values indicate a later frost date.
+- file: last_spring_frost_by_state.csv
+  figure: Figure 5
+  figure_title: Figure 5. Change in Timing of Last Spring Frost by State, 1895-2023
+  source_file: growing-season_fig-5.csv
+  source_sha256: 322cc96ded8eaae17d166385c46941184d445f90129122740e184b6e96848ab8
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days change
+  rows: 47
+  columns:
+  - name: state
+    type: character
+    description: US state name (contiguous 48 states).
+  - name: value
+    type: number
+    description: Total change in last spring frost date from 1895 to 2023, in days;
+      negative values indicate an earlier frost date.
+- file: first_fall_frost_by_state.csv
+  figure: Figure 6
+  figure_title: Figure 6. Change in Timing of First Fall Frost by State, 1895-2023
+  source_file: growing-season_fig-6.csv
+  source_sha256: 8eac9a5f6d0bf20ae92776681448fa26c5f322f36a0c8ee529a271240ae05615
+  source_encoding: UTF-8
+  data_source: Kunkel, 2024
+  web_update: June 2024
+  unit: days change
+  rows: 47
+  columns:
+  - name: state
+    type: character
+    description: US state name (contiguous 48 states).
+  - name: value
+    type: number
+    description: Total change in first fall frost date from 1895 to 2023, in days;
+      positive values indicate a later frost date.
